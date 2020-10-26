@@ -126,11 +126,7 @@ export default class RhsThread extends React.Component<Props, State> {
             return;
         }
 
-        const curLastPost = curPostsArray[0];
-
-        if (curLastPost.user_id === this.props.currentUserId) {
-            this.scrollToBottom();
-        }
+        this.scrollToBottom();
     }
 
     public shouldComponentUpdate(nextProps: Props, nextState: State) {
