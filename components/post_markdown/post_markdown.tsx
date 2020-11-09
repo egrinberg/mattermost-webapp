@@ -6,7 +6,7 @@ import React from 'react';
 
 import Markdown from 'components/markdown';
 
-import {renderSystemMessage} from './system_message_helpers.jsx';
+import {renderSystemMessage} from './system_message_helpers.tsx';
 
 export default class PostMarkdown extends React.PureComponent {
     static propTypes = {
@@ -57,7 +57,7 @@ export default class PostMarkdown extends React.PureComponent {
         options: {},
     };
 
-    render() {
+    render() : JSX.Element {
         let {message} = this.props;
         const {post, mentionKeys} = this.props;
 
