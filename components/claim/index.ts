@@ -9,7 +9,7 @@ import {getConfig} from 'mattermost-redux/selectors/entities/general';
 
 import {getPasswordConfig} from 'utils/utils.jsx';
 
-import ClaimController from './claim_controller.jsx';
+import ClaimController from './claim_controller.tsx';
 
 function mapStateToProps(state) {
     const config = getConfig(state);

@@ -31,7 +31,7 @@ export default class ClaimController extends React.PureComponent {
         }).isRequired,
     };
 
-    render() {
+    render() : JSX.Element {
         const email = (new URLSearchParams(this.props.location.search)).get('email');
         const newType = (new URLSearchParams(this.props.location.search)).get('new_type');
         const currentType = (new URLSearchParams(this.props.location.search)).get('old_type');
